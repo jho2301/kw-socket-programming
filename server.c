@@ -46,6 +46,7 @@ int main(int argc, char *argv[])
 
   char msg[] = "you are successfully connected!!\n";
   send(client_socket, msg, sizeof(msg), 0);
+  write(1, "successfully accecpted", 22);
 
   while (1)
   {
